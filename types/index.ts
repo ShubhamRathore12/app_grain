@@ -11,6 +11,8 @@ export interface Device {
   company?: any;
   lastMaintenance?: any;
   nextMaintenance?: any;
+  plc?:string;
+  chillerModel?:string;
   serialNumber?: any; // This will be the imported image
 }
 

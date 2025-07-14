@@ -349,7 +349,7 @@ export default function RegistrationScreen() {
       };
 
       const response = await fetch(
-        "https://grain-backend.onrender.com/api/register",
+        "https://new-plc-software-5xyc.vercel.app/api/register",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

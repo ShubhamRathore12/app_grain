@@ -64,7 +64,7 @@ export default function LoginScreen() {
       console.log("🔄 Starting login process...");
 
       const response = await fetch(
-        "https://grain-backend.onrender.com/api/auth/login",
+        "https://grain-backend-1.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {

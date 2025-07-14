@@ -1,14 +1,14 @@
 import { useMachineData } from "@/hooks/useMachineData";
 import { useEffect, useRef, useState } from "react";
 import {
-  Animated,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Animated,
+    Image,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from "react-native";
 
 // Import images
@@ -33,8 +33,8 @@ export default function AerationControlView({
   const { data, error, isConnected } = useMachineData({
     url:
     deviceId == 2
-        ? `https://grain-backend.onrender.com/api/alldata/alldata`
-        : `https://grain-backend.onrender.com/api/ws/current-data`,
+        ? `https://new-plc-software-5xyc.vercel.app/api/alldata/alldata`
+        : `https://new-plc-software-5xyc.vercel.app/api/ws/current-data`,
   });
 
   // Mock data - replace with actual data hooks when available

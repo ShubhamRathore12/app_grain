@@ -44,14 +44,17 @@ export default function DeviceDetailsScreen() {
     settingsOptions.map(() => new Animated.Value(1))
   );
 
+  console.log({id});
+  
+
   // Screen blocking state
   const [blockedScreens, setBlockedScreens] = useState<string[] | null>(null);
 
   const { data, error, isConnected } = useMachineData({
     url:
       String(id) === "2"
-        ? `https://grain-backend.onrender.com/api/alldata/alldata`
-        : `https://grain-backend.onrender.com/api/ws/current-data`,
+        ? `https://new-plc-software-5xyc.vercel.app/api/alldata/alldata`
+        : `https://new-plc-software-5xyc.vercel.app/api/ws/current-data`,
   });
   
 
@@ -475,7 +478,7 @@ export default function DeviceDetailsScreen() {
           setCurrentView("fault");
           return null;
         }
-        return <FaultCodeView onBack={() => setCurrentView("fault")} />;
+        return <FaultCodeView onBack={() => setCurrentView("fault")} data={data} id={id}/>;
       case "test":
         if (shouldBlockNavigation("test")) {
           setCurrentView("menu");

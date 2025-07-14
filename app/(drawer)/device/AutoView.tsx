@@ -26,8 +26,8 @@ const AutoView = ({ onBack, id }: any) => {
   const { data, error, isConnected } = useMachineData({
     url:
       id == 2
-        ? `https://grain-backend.onrender.com/api/alldata/alldata`
-        : `https://grain-backend.onrender.com/api/ws/current-data`,
+        ? `https://new-plc-software-5xyc.vercel.app/api/alldata/alldata`
+        : `https://new-plc-software-5xyc.vercel.app/api/getData`,
   });
 
 

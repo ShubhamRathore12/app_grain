@@ -23,7 +23,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.anuragiravi123.grain_technik",
+      "package": "com.yash1122.grain_technik",
       "icon": "./assets/images/icon.png"
     },
     "web": {
@@ -52,9 +52,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "07bfbba3-0a42-4bbd-ae0a-d83c5565c709"
+        "projectId": "7b8cad31-c232-4671-bc7b-d1b5a3db51bc"
       }
     },
-    "owner": "anuragiravi123"
+    "owner": "yash1122"
   }
 }

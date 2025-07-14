@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
-  View,
-  Text,
-  FlatList,
-  ScrollView,
-  StyleSheet,
-  ActivityIndicator,
-  Alert,
+    ActivityIndicator,
+    Alert,
+    FlatList,
+    ScrollView,
+    StyleSheet,
+    Text,
+    View,
 } from "react-native";
 
 export default function TableWithDownload() {
@@ -19,7 +19,7 @@ export default function TableWithDownload() {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://grain-backend.onrender.com/api/alldata/machine-data"
+          "https://new-plc-software-5xyc.vercel.app/api/alldata/machine-data"
         );
         const json = await response.json();
 
