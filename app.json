@@ -53,7 +53,8 @@
       },
       "eas": {
         "projectId": "7b8cad31-c232-4671-bc7b-d1b5a3db51bc"
-      }
+      },
+       "apiUrl": "https://new-plc-software-5xyc.vercel.app" 
     },
     "owner": "yash1122"
   }
